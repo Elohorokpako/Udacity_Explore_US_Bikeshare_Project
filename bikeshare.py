@@ -155,10 +155,9 @@ try:
         while True:
             prompt=input('Would you like to see five rows of the raw data? ').lower()
             if prompt=='yes':
-                print(df.loc[0:4,:])
+                print(df.iloc[0:4,:])
                 break
             elif prompt=='no':
-                loop='break'
                 break
             else:
                 print('Please Enter yes or no')
